@@ -61,7 +61,6 @@ public class ConsultationController {
     public List<TestRequest> getForDoctor()  {
 
         // this method is use to get list of request  loggedIn Doctor has worked on
-
         User doctor  =userLoggedInService.getLoggedInUser();
         return  testRequestQueryService.findByDoctor(doctor);
     }
